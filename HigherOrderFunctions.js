@@ -1,23 +1,33 @@
 let list=[2,3,4,5,6];
-map(list,filter);
+map(list);
+filter(list);
+reduce(list);
+foreach(list);
+
 //Transforming list into double list.
 function map(list,filter)
 {
   let output=double(list);
-  filter(output,reduce);
+  console.log(output);
 }
+
+
 //Filtering even numbers.
 function filter(list,reduce)
 {
   let output=filterEvenNumbers(list);
-  reduce(output,foreach);
+  console.log(output);
 }
+
+
 //Finding the max number in the list
 function reduce(list,foreach)
 {
     let output=findMaxnumberUsingReduceFunctionality(list);
-    foreach(list);
+  console.log(output);
 }
+
+
 //Adding one to ever number
 function foreach(output)
 {
